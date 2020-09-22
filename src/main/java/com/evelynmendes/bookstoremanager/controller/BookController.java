@@ -22,8 +22,8 @@ public class BookController {
 	}
 
 	@PostMapping
-	public MessageResponseDTO create(@RequestBody BookDTO livroDTO) {
-		return bookService.create(livroDTO);
+	public MessageResponseDTO create(@RequestBody BookDTO bookDTO) {
+		return bookService.create(bookDTO);
 	}
 	
 }
